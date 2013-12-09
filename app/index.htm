@@ -8,9 +8,10 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="styles/main.css">
 </head>
-<body ng-app="webpxr">
+<body ng-app="app">
 	<div class="container" ng-view=""></div>
 	
+	<script src="scripts/vendor/underscore-amd/underscore.js"></script>
 	<script src="scripts/vendor/jquery/jquery.js"></script>
 	<script src="scripts/vendor/angular/angular.js"></script>
 	<script src="scripts/vendor/angular-resource/angular-resource.js"></script>
@@ -18,6 +19,8 @@
 	<script src="scripts/vendor/angular-sanitize/angular-sanitize.js"></script>
 	<script src="scripts/vendor/angular-route/angular-route.js"></script>
 	<script src="scripts/app.js"></script>
+	<script src="scripts/services/d3.js"></script>
+	<script src="scripts/directives/d3Basic.js"></script>
 	<script src="scripts/controllers/main.js"></script>
 </body>
 </html>

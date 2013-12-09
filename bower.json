@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "dependencies": {
     "d3": "latest",
+	"underscore-amd": "latest",
     "jquery": "~1.10.2",
     "angular": "~1.2.0",
     "angular-resource": "~1.2.0",

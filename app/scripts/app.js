@@ -1,10 +1,13 @@
+(function () {
 'use strict';
 
-angular.module('webpxr', [
+angular.module('app', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
-  'ngRoute'
+  'ngRoute',
+  'app.controllers',
+  'app.directives'
 ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -16,3 +19,12 @@ angular.module('webpxr', [
         redirectTo: '/'
       });
   });
+
+// setup dependency injection
+angular.module('d3', []);
+angular.module('app.controllers', []);
+angular.module('app.directives', ['d3']);
+
+
+
+}());
