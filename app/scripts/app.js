@@ -7,7 +7,8 @@ angular.module('app', [
   'ngSanitize',
   'ngRoute',
   'app.controllers',
-  'app.directives'
+  'app.directives',
+  'bgDirectives'
 ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -24,7 +25,4 @@ angular.module('app', [
 angular.module('d3', []);
 angular.module('app.controllers', []);
 angular.module('app.directives', ['d3']);
-
-
-
 }());
